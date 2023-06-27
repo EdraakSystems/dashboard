@@ -7,7 +7,18 @@
     background: #ffffff;
     padding: 3rem 1rem;
     border-right: 1px solid lightgray;
+    position: relative;
 
+}
+
+.left_menu {
+    position: absolute;
+    background: var(--pri_clr);
+    color: white;
+    height: auto;
+    padding: 0.7rem 0.7rem;
+    top: 0;
+    right: 0;
 }
 
 .first_child {

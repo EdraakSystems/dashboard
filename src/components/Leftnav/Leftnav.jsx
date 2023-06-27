@@ -1,5 +1,7 @@
 import React from 'react'
 import './Leftnav.css'
+
+import { RiMenuFoldFill } from 'react-icons/ri'
 import { RiArrowDropDownLine } from 'react-icons/ri'
 import { LuLayoutDashboard } from 'react-icons/lu'
 import { MdOutlineInventory } from 'react-icons/md'
@@ -16,6 +18,9 @@ import { AiOutlineSetting } from 'react-icons/ai'
 const Leftnav = () => {
     return (
         <div className='left_nav'>
+            <div className="left_menu">
+                <RiMenuFoldFill />
+            </div>
             <li className="left_nav_list first_child">
                 <LuLayoutDashboard />
                 <h5>Dashboard</h5>
