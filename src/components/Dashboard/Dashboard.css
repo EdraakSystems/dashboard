@@ -1,0 +1,39 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.dashboard_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+
+}
+
+.dashboard_info div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+
+.cards_data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--sec_clr);
+    color: white;
+    width: 10rem;
+    height: 5rem;
+    border-radius: 10px;
+}
