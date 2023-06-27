@@ -1,3 +1,33 @@
 .navbar {
-    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--white);
+}
+
+.nav_products,
+.nav_products li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav_task_list,
+.nav_search,
+.nav_user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--secondary-clr);
+    font-weight: 900;
 }

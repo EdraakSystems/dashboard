@@ -1,13 +1,12 @@
 import React from 'react'
-import Navbar from './components/Navbar/Navbar'
-import Leftnav from './components/Leftnav/Leftnav'
+import './index.css'
 
+import Navbar from './components/Navbar/Navbar'
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <Leftnav />
     </>
   )
 }

@@ -11,18 +11,17 @@
 }
 
 :root {
-  --primary_color: #003cd1;
-  --secondary_color: #38638b;
-  --background_color: #f4f7f8;
-  --text_color: var(var(--primary_color));
+  --primary_clr: #003cd1;
+  --secondary_clr: #38638b;
+  --background_clr: #f4f7f8;
+  --text_clr: var(var(--primary_clr));
   --white: #ffffff;
   --hover: #c3073f;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
-  background-color: var(--background_color);
-
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background_clr);
 }
 
 ul,
@@ -45,36 +44,18 @@ a {
 }
 
 .app {
-  color: var(--primary_color)
+  color: var(--primary_clr)
 }
 
 .btn {
-  display: inline-flex;
-  border: 0;
-  border-radius: 100vmax;
-  padding: 1.25em 2.5em;
-  font-weight: var(--fw_bold);
-  font-size: var(--fs_btn);
-  line-height: 1;
-  color: var(--clr_neutral_100);
-  background-color: var(--clr_accent_400);
-  cursor: pointer;
-  text-decoration: none;
-  box-shadow: 0 1.125em 1em -1em var(--clr_accent_500);
-  transition: background-color 0.3s;
+  padding: 0.7rem 0.7rem;
+  background-color: var(--primary_clr);
+  border-radius: 0.3rem;
+  color: var(--background_color);
+  transition: all linear 0.2s;
 }
 
 .btn:hover,
 .btn:focus-visible {
-  background-color: var(--clr_accent_300);
-}
-
-@media only screen and (min-width: 100px) and (max-width: 700px) {
-  .btn {
-    padding: 0.7rem 0.7rem;
-    background-color: var(--primary_color);
-    border-radius: 0.3rem;
-    color: var(--background_color);
-    transition: all linear 0.2s;
-  }
+  background-color: var(--secondary_clr);
 }
