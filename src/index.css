@@ -11,17 +11,17 @@
 }
 
 :root {
-  --primary_clr: #003cd1;
-  --secondary_clr: #38638b;
-  --background_clr: #f4f7f8;
-  --text_clr: var(var(--primary_clr));
+  --pri_clr: #003cd1;
+  --sec_clr: #38638b;
+  --bg_clr: #f4f7f8;
+  --text_clr: var(--pri_clr);
   --white: #ffffff;
   --hover: #c3073f;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--background_clr);
+  background-color: var(--bg_clr);
 }
 
 ul,
@@ -43,19 +43,15 @@ a {
   margin-inline: auto;
 }
 
-.app {
-  color: var(--primary_clr)
-}
-
 .btn {
   padding: 0.7rem 0.7rem;
-  background-color: var(--primary_clr);
+  background-color: var(--pri_clr);
   border-radius: 0.3rem;
-  color: var(--background_color);
+  color: var(--bg_clr);
   transition: all linear 0.2s;
 }
 
 .btn:hover,
 .btn:focus-visible {
-  background-color: var(--secondary_clr);
+  background-color: var(--sec_clr);
 }
