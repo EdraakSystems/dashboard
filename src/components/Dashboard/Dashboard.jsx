@@ -10,6 +10,8 @@ import { MdKeyboardArrowRight } from 'react-icons/md'
 import { RiDeleteBin3Line } from 'react-icons/ri'
 import { MdShelves } from 'react-icons/md'
 import { LiaHandHoldingHeartSolid } from 'react-icons/lia'
+import { RiArrowDropDownLine } from 'react-icons/ri'
+import { BsSearch } from 'react-icons/bs'
 
 
 const Dashboard = () => {
@@ -123,6 +125,50 @@ const Dashboard = () => {
               <MdKeyboardArrowRight />
             </div>
           </div>
+        </div>
+      </div>
+      <div className="card_3">
+        <div className="cards_3_data cards_3_table">
+          <div className="table_caption">
+            <h2>Latest Sales Orders-By Sales Channels</h2>
+            <h4>Enable</h4>
+          </div>
+          <div className="table_filter">
+            <div className="table_search">
+              <p>510245215</p>
+              <BsSearch />
+            </div>
+            <ul>
+              <li>All</li>
+              <li>Open</li>
+              <li>Completed</li>
+              <li>Filled</li>
+            </ul>
+          </div>
+          <div className="table_data">
+            <table>
+              <tr>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Fulfillment Status</th>
+                <th>Payment Status</th>
+                <th>Total</th>
+              </tr>
+              <tr className='first_row'>
+                <td>50000B3</td>
+                <td>Shahab Yaseen</td>
+                <td>Fulfilled</td>
+                <td>Paid</td>
+                <td>$6.000</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div className="cards_3_data cards_3_purchase">
+          hello
+        </div>
+        <div className="cards_3_data cards_3_top_selling">
+          hello
         </div>
       </div>
 
