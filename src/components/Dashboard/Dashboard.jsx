@@ -161,6 +161,34 @@ const Dashboard = () => {
                 <td>Paid</td>
                 <td>$6.000</td>
               </tr>
+              <tr className='second_row'>
+                <td>50000B3</td>
+                <td>Shahab Yaseen</td>
+                <td>Canceled</td>
+                <td>Partially Paid</td>
+                <td>$12.000</td>
+              </tr>
+              <tr className='third_row'>
+                <td>50000B3</td>
+                <td>Shahab Yaseen</td>
+                <td>Partially Fulfilled</td>
+                <td>Fulfilled</td>
+                <td>$200</td>
+              </tr>
+              <tr className='fourth_row'>
+                <td>50000B3</td>
+                <td>Shahab Yaseen</td>
+                <td>Unfulfilled</td>
+                <td>Pending</td>
+                <td>$10</td>
+              </tr>
+              <tr className='fifth_row'>
+                <td>50000B3</td>
+                <td>Shahab Yaseen</td>
+                <td>Draft</td>
+                <td>Partially Paid</td>
+                <td>$3.000</td>
+              </tr>
             </table>
           </div>
         </div>
@@ -172,7 +200,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-    </div>
+    </div >
   )
 }
 
