@@ -192,20 +192,6 @@
 
 }
 
-.cards_3_purchase {
-    width: 18rem;
-    border-radius: 12px;
-    background-color: white;
-
-
-}
-
-.cards_3_top_selling {
-    border-radius: 19px;
-    background-color: white;
-    width: 18rem;
-}
-
 .table_caption {
     display: flex;
     align-items: center;
@@ -406,4 +392,114 @@ tr:not(:first-child) {
 
 .fifth_row :nth-child(5) {
     color: var(--sec_clr);
+}
+
+
+.cards_3_purchase {
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    border-radius: 12px;
+    background-color: white;
+    gap: 1rem;
+}
+
+.cards_3_purchase>h2 {
+    font-size: 1rem;
+    color: var(--sec_clr);
+    font-weight: 300;
+    margin: 1rem 1rem;
+}
+
+.cards3_bill {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 1.25rem;
+    margin: 0 1rem;
+    color: var(--sec_clr);
+    font-size: 0.65rem;
+    font-weight: 200;
+}
+
+.horizontal-line {
+    border: none;
+    width: 85%;
+    margin: 0 auto;
+    border-top: 1px solid var(--sec_clr);
+}
+
+.cards3_bill_detail>h3 {
+    margin: 0 1rem;
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: var(--sec_clr);
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.details div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 1rem 0 1rem;
+}
+
+.details div h3 {
+    font-size: 0.75rem;
+    color: var(--sec_clr);
+}
+
+.details div :nth-child(2) {
+    color: var(--pri_clr);
+}
+
+.details div :nth-child(3) {
+    margin-left: 8rem;
+}
+
+.details_logo_1 :first-child {
+    fill: #ff9356;
+    font-size: 1rem;
+}
+
+.details_logo_2 :first-child {
+    fill: #00c081;
+    font-size: 1rem;
+}
+
+.details_logo_3 :first-child {
+    fill: #0040d2;
+    font-size: 1rem;
+}
+
+.details_logo_4 :first-child {
+    fill: #ff0000;
+    font-size: 1rem;
+}
+
+.details_logo_5 :first-child {
+    fill: #cdc6fe;
+    font-size: 1rem;
+}
+
+.details>h6 {
+    color: var(--sec_clr);
+    font-size: 0.75rem;
+    margin: 0 2.5rem;
+}
+
+.cards_3_purchase>h3 {
+    font-size: small;
+    color: var(--pri_clr);
+    margin-top: -0.75rem;
+    margin-left: 1rem;
+}
+
+.cards_3_top_selling {
+    border-radius: 19px;
+    background-color: white;
+    width: 18rem;
 }
