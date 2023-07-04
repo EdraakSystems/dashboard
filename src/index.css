@@ -6,9 +6,9 @@
 
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 :root {
   --pri_clr: #003cd1;
@@ -22,6 +22,9 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--bg_clr);
+  overflow-x: hidden;
+  max-width: 100vw;
+
 }
 
 ul,
@@ -39,18 +42,15 @@ a {
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 .topNavbar {
-  height: 50px;
+  max-height: 50px;
 }
 
 .content {
   display: flex;
-  flex: 1;
+  flex: 1 1 auto;
 }
 
 .sideNavbar {
@@ -59,18 +59,4 @@ a {
 
 .dashBoard {
   flex: 1;
-}
-
-
-.btn {
-  padding: 0.7rem 0.7rem;
-  background-color: var(--pri_clr);
-  border-radius: 0.3rem;
-  color: var(--bg_clr);
-  transition: all linear 0.2s;
-}
-
-.btn:hover,
-.btn:focus-visible {
-  background-color: var(--sec_clr);
 }

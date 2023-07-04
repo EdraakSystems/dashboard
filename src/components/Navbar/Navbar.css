@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     background: var(--white);
+    max-width: 100%;
 }
 
 .nav_logo {
@@ -108,4 +109,28 @@
 .nav_user img {
     width: 2rem;
     border-radius: 50%;
+}
+
+.menu {
+    display: none;
+}
+
+@media (max-width:599px) {
+    .nav_logo {
+        font-weight: 200;
+        font-size: 1.5rem;
+        margin-left: 1.5rem;
+    }
+
+    .menu {
+        display: block;
+        margin: 0 1rem;
+    }
+
+    .nav_product,
+    .nav_task,
+    .nav_search,
+    .nav_user {
+        display: none;
+    }
 }

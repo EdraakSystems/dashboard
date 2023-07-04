@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 2rem;
     width: 10rem;
-    height: 100vh;
+    height: 100%;
     background: #ffffff;
     padding: 3rem 1rem;
     border-right: 1px solid lightgray;
@@ -40,4 +40,10 @@
 
 .left_nav_list h5 {
     color: var(--sec_clr);
+}
+
+@media (max-width:599px) {
+    .left_nav {
+        display: none;
+    }
 }

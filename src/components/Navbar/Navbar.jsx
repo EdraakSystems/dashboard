@@ -9,6 +9,7 @@ import { LuFolderTree } from 'react-icons/lu'
 import { BsSearch } from 'react-icons/bs'
 import { GrNotification } from 'react-icons/gr'
 import { RiArrowDropDownLine } from 'react-icons/ri'
+import { LuMenu } from 'react-icons/lu'
 
 
 const Navbar = () => {
@@ -50,6 +51,9 @@ const Navbar = () => {
         <img src={img} alt="profile" />
         <h6>Muhammad Hamza</h6>
         <RiArrowDropDownLine />
+      </div>
+      <div className="menu">
+        <LuMenu />
       </div>
     </div>
   )
