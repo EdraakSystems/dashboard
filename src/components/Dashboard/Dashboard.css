@@ -265,11 +265,6 @@ td {
     padding: 0.5rem;
 }
 
-
-tr:not(:first-child) {
-    border-top: 1px solid var(--sec_clr);
-}
-
 .first_row :first-child {
     color: var(--pri_clr);
 }
@@ -421,7 +416,7 @@ tr:not(:first-child) {
     font-weight: 200;
 }
 
-.horizontal-line {
+.horizontal_line {
     border: none;
     width: 85%;
     margin: 0 auto;
@@ -502,4 +497,53 @@ tr:not(:first-child) {
     border-radius: 19px;
     background-color: white;
     width: 18rem;
+}
+
+.cards_3_top_selling>h3 {
+    font-size: 1rem;
+    color: var(--sec_clr);
+    font-weight: 300;
+    margin: 1rem 1rem
+}
+
+.card3_tshirt :nth-child(2) {
+    color: var(--pri_clr) !important;
+    font-size: 0.75rem;
+}
+
+.card3_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card3_list_ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+.card3_list_ul :nth-child(2) {
+    color: var(--sec_clr);
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.card3_list_ul :nth-child(3) {
+    color: var(--sec_clr);
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+
+.products_hr {
+    border: none;
+    width: 50%;
+    margin: 0.15rem auto;
+    border-top: 1px solid var(--sec_clr);
+}
+
+.card3_list_ul>li>img {
+    width: 45%;
+    margin-inline: 2.5rem;
 }

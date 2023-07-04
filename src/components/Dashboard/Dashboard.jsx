@@ -1,5 +1,9 @@
 import React from 'react'
 import './Dashboard.css'
+import img1 from '../../assets/tshirt.png'
+import img2 from '../../assets/frock.png'
+import img3 from '../../assets/shoes.png'
+
 import { HiOutlineNewspaper } from 'react-icons/hi'
 import { BsArrowRightShort } from 'react-icons/bs'
 import { PiNotepad } from 'react-icons/pi'
@@ -200,7 +204,7 @@ const Dashboard = () => {
             <h3>Total Cost (USD)</h3>
             <h3>$4600</h3>
           </div>
-          <hr className="horizontal-line" />
+          <hr className="horizontal_line" />
 
           <div className="cards3_bill_detail">
             <h3>Incoming Purchase orders</h3>
@@ -248,7 +252,46 @@ const Dashboard = () => {
           <h3>View all</h3>
         </div>
         <div className="cards_3_data cards_3_top_selling">
-          hello
+          <h3>Top Selling Products</h3>
+          <div className='card3_list'>
+            <ul className='card3_list_ul card3_tshirt'>
+              <li><img src={img1} alt="tshirt" /></li>
+              <li>T-Shirt for Men</li>
+              <li>$50</li>
+              <hr className="products_hr" />
+            </ul>
+            <ul className='card3_list_ul card3_tshirt'>
+              <li><img src={img1} alt="tshirt" /></li>
+              <li>T-Shirt for Men</li>
+              <li>$50</li>
+              <hr className="products_hr" />
+
+            </ul>
+
+            <ul className='card3_list_ul'>
+              <li><img src={img2} alt="frock" /></li>
+              <li>Lorem ipsum dolor sit amet consectetur</li>
+              <li>$250</li>
+              <hr className="products_hr" />
+
+            </ul>
+            <ul className='card3_list_ul'>
+              <li><img src={img2} alt="frock" /></li>
+              <li>Lorem, ipsum dolor sit amet consectetur</li>
+              <li>$250</li>
+              <hr className="products_hr" />
+            </ul>
+            <ul className='card3_list_ul'>
+              <li><img src={img3} alt="frock" /></li>
+              <li>Lorem ipsum dolor sit amet </li>
+              <li>$80</li>
+            </ul>
+            <ul className='card3_list_ul'>
+              <li><img src={img3} alt="frock" /></li>
+              <li>Lorem, ipsum dolor sit amet </li>
+              <li>$80</li>
+            </ul>
+          </div>
         </div>
       </div>
 
