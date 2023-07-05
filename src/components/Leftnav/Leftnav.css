@@ -41,9 +41,3 @@
 .left_nav_list h5 {
     color: var(--sec_clr);
 }
-
-@media (max-width:599px) {
-    .left_nav {
-        display: none;
-    }
-}

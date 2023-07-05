@@ -14,7 +14,7 @@ import { LuMenu } from 'react-icons/lu'
 
 const Navbar = () => {
   return (
-    <div className='navbar'>
+    <div className='navbar container'>
       <h2 className="nav_logo">Logo</h2>
       <ul className='nav_product'>
         <li className='nav_product_list'>
