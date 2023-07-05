@@ -253,7 +253,7 @@ const Dashboard = () => {
             <h3>View all</h3>
           </div>
           <div className="cards_3_data cards_3_top_selling">
-            <h3>Top Selling Products</h3>
+            <h2>Top Selling Products</h2>
             <div className='card3_list'>
               <ul className='card3_list_ul card3_tshirt'>
                 <li><img src={img1} alt="tshirt" /></li>

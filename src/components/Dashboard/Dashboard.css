@@ -38,7 +38,7 @@
     align-items: center;
     justify-content: space-evenly;
     color: white;
-    max-width: 18rem;
+    max-width: 15rem;
     height: 6rem;
     border-radius: 12px;
     padding: 0.5rem 0.75rem;
@@ -46,7 +46,8 @@
 }
 
 .cards_data_info {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: 0.5rem;
 }
@@ -160,8 +161,8 @@
 }
 
 .cards_2_data_info2>h3 {
-    font-size: 2rem;
-    font-weight: 300;
+    font-size: 1.5rem;
+    font-weight: 200;
     color: var(--sec_clr);
 
 }
@@ -253,7 +254,7 @@
 }
 
 .table_data table {
-    width: auto;
+    width: 100%;
     text-align: center;
     border-top: 1px solid var(--bg_clr);
     border-collapse: separate;
@@ -477,7 +478,7 @@ td {
 .cards_3_purchase>h3 {
     font-size: small;
     color: var(--pri_clr);
-    margin-top: -0.75rem;
+    margin-bottom: 0.7rem;
     margin-left: 1rem;
 }
 
@@ -485,13 +486,6 @@ td {
     border-radius: 19px;
     max-width: 18rem;
     background-color: white;
-}
-
-.cards_3_top_selling>h3 {
-    font-size: 1rem;
-    color: var(--sec_clr);
-    font-weight: 300;
-    margin: 1rem 1rem
 }
 
 .card3_tshirt :nth-child(2) {
@@ -538,32 +532,42 @@ td {
 
 @media (max-width:599px) {
     .dashboard_info {
-        padding: 0 1.5rem;
         font-size: 0.85rem;
-        font-weight: 200;
+        flex-wrap: wrap;
     }
 
     .cards {
         grid-template-columns: 1fr 1fr;
-        grid-gap: 0.7rem;
+        gap: 0.7rem;
         max-width: 80%;
     }
 
     .cards_data {
-        border-radius: 12px;
         padding: 0.5rem 0.75rem;
-        gap: 3rem;
+        gap: 2.5rem;
+    }
+
+    .cards_data_info>h5 {
+        font-size: 0.6rem;
     }
 
     .cards_data_info>h3 {
-        color: white;
-        font-size: 1.5rem;
-        font-weight: 200;
-        text-align: left;
+        font-size: 1.25rem;
+        font-weight: 100;
     }
 
     .dashboard_info div {
         font-size: 0.75rem;
+    }
+
+    .cards_data_logo {
+        justify-content: space-around;
+        gap: 1.5rem;
+        font-size: large;
+    }
+
+    .logo_top {
+        font-size: large;
     }
 
     .dashboard_info div :first-child {
@@ -576,10 +580,25 @@ td {
         max-width: 80%;
     }
 
+    .cards_2_data {
+        padding: 0.5rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .cards_2_logo {
+        font-size: large;
+        width: 2rem;
+        height: 2rem;
+    }
+
     .card_3 {
         flex-direction: column;
         gap: 0.5rem;
         max-width: 80%;
+    }
+
+    .cards_2_data_info2>h3 {
+        font-size: 1.25rem;
     }
 
     /* .card_3 :nth-child(2) {
@@ -587,7 +606,6 @@ td {
     } */
 
     .cards_3_table {
-        width: auto;
         height: auto;
     }
 
@@ -599,6 +617,7 @@ td {
     .table_filter {
         justify-content: center;
         gap: 1rem;
+        flex-wrap: wrap;
     }
 
     .table_search {
@@ -643,4 +662,7 @@ td {
         font-weight: 100;
     }
 
+    .details_logo_2 :first-child {
+        font-size: 0.75rem;
+    }
 }
