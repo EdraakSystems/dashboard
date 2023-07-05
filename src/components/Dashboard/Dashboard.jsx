@@ -22,7 +22,7 @@ const Dashboard = () => {
   return (
     <div className='dashboard'>
       <div className='dashboard_info'>
-        <h3>Sales Activity for this week</h3>
+        <h2>Sales Activity for this week</h2>
         <div>
           <h5>Edit Layout</h5>
           <h5>Filter by Year</h5>
@@ -132,7 +132,7 @@ const Dashboard = () => {
         </div>
       </div>
       <div className="card_3 container">
-        <div className="cards_3_data cards_3_table">
+        <div className="cards_3_data cards_3_table container">
           <div className="table_caption">
             <h2>Latest Sales Orders-By Sales Channels</h2>
             <h4>Enable</h4>

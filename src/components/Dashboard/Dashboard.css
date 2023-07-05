@@ -57,8 +57,9 @@
 }
 
 .cards_data_info>h3 {
-    font-size: 2rem;
-    font-weight: 300;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 200;
 }
 
 .cards_data_logo {
@@ -186,6 +187,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    width: 100%;
 }
 
 .cards_3_data {
@@ -202,13 +204,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 80%;
-}
-
-.table_caption>h2 {
-    font-size: 1rem;
-    color: var(--sec_clr);
-    font-weight: 300;
+    max-width: 100%;
+    margin: 0.5rem 1rem;
+    gap: 0.5rem;
 }
 
 .table_caption>h4 {
@@ -221,6 +219,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0.5rem 1rem;
+    max-width: 100%;
 }
 
 .table_filter>ul {
@@ -271,6 +270,10 @@ td {
     padding: 0.5rem;
 }
 
+.first_row>* {
+    border-radius: 5px;
+}
+
 .first_row :first-child {
     color: var(--pri_clr);
 }
@@ -282,13 +285,11 @@ td {
 .first_row :nth-child(3) {
     color: var(--pri_clr);
     background: rgba(0, 151, 235, 0.3);
-    border-radius: 5px;
 }
 
 .first_row :nth-child(4) {
     color: rgba(0, 175, 82, 1);
     background: rgba(0, 209, 119, 0.15);
-    border-radius: 5px;
 }
 
 .first_row :nth-child(5) {
@@ -306,14 +307,12 @@ td {
 .second_row :nth-child(3) {
     color: rgba(255, 38, 0, 1);
     background: rgba(255, 138, 34, 0.3);
-    border-radius: 5px;
     ;
 }
 
 .second_row :nth-child(4) {
     color: rgba(99, 0, 197, 1);
     background: rgba(158, 73, 236, 0.3);
-    border-radius: 5px;
 }
 
 .second_row :nth-child(5) {
@@ -331,14 +330,12 @@ td {
 .third_row :nth-child(3) {
     color: rgb(17, 117, 145);
     background: rgba(136, 219, 239, 0.3);
-    border-radius: 5px;
     ;
 }
 
 .third_row :nth-child(4) {
     color: rgb(15, 15, 16);
     background: rgba(207, 190, 222, 0.3);
-    border-radius: 5px;
 }
 
 .third_row :nth-child(5) {
@@ -356,14 +353,12 @@ td {
 .fourth_row :nth-child(3) {
     color: rgb(227, 201, 34);
     background: rgba(203, 240, 117, 0.3);
-    border-radius: 5px;
     ;
 }
 
 .fourth_row :nth-child(4) {
     color: rgb(227, 201, 34);
     background: rgba(201, 230, 133, 0.3);
-    border-radius: 5px;
 }
 
 .fourth_row :nth-child(5) {
@@ -381,14 +376,12 @@ td {
 .fifth_row :nth-child(3) {
     color: var(--sec_clr);
     background: var(--bg_clr);
-    border-radius: 5px;
     ;
 }
 
 .fifth_row :nth-child(4) {
     color: var(--sec_clr);
     background: var(--bg_clr);
-    border-radius: 5px;
 }
 
 .fifth_row :nth-child(5) {
@@ -403,13 +396,6 @@ td {
     border-radius: 12px;
     background-color: white;
     gap: 1rem;
-}
-
-.cards_3_purchase>h2 {
-    font-size: 1rem;
-    color: var(--sec_clr);
-    font-weight: 300;
-    margin: 1rem 1rem;
 }
 
 .cards3_bill {
@@ -436,10 +422,6 @@ td {
     color: var(--sec_clr);
 }
 
-.details {
-    display: flex;
-    flex-direction: column;
-}
 
 .details div {
     display: flex;
@@ -563,7 +545,7 @@ td {
 
     .cards {
         grid-template-columns: 1fr 1fr;
-        grid-gap: 0.5rem;
+        grid-gap: 0.7rem;
         max-width: 80%;
     }
 
@@ -573,6 +555,21 @@ td {
         gap: 3rem;
     }
 
+    .cards_data_info>h3 {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 200;
+        text-align: left;
+    }
+
+    .dashboard_info div {
+        font-size: 0.75rem;
+    }
+
+    .dashboard_info div :first-child {
+        padding: 0.25rem 0.35rem;
+    }
+
     .cards_2 {
         grid-template-columns: 1fr 1fr;
         grid-gap: 0.5rem;
@@ -580,16 +577,70 @@ td {
     }
 
     .card_3 {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         gap: 0.5rem;
         max-width: 80%;
     }
 
-    .card_3 :nth-child(2) {
+    /* .card_3 :nth-child(2) {
         grid-template-columns: 1fr 1fr;
-    }
+    } */
 
     .cards_3_table {
         width: auto;
+        height: auto;
     }
+
+    .table_data table {
+        border-spacing: 0.5rem;
+        font-size: 0.5rem;
+    }
+
+    .table_filter {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .table_search {
+        align-items: center;
+        gap: 1rem;
+        width: 35%;
+    }
+
+    .table_filter>ul {
+        gap: 1rem;
+        font-size: 0.75rem;
+        font-weight: 100;
+    }
+
+    .table_filter>ul :first-child {
+        padding: 0.2rem 0.65rem;
+    }
+
+    th {
+        padding: 0.25rem;
+    }
+
+    td {
+        padding: 0.25rem;
+    }
+
+    .card3_container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cards_3_purchase {
+        width: auto;
+        height: auto;
+        gap: 0.5rem;
+    }
+
+    .cards3_bill {
+        gap: 0.85rem;
+        margin: 0 1rem;
+        font-size: 0.55rem;
+        font-weight: 100;
+    }
+
 }
