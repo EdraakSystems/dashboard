@@ -96,14 +96,17 @@ h2 {
   .sideNavbar {
     display: none;
   }
+
+  h2 {
+    font-size: 0.75rem;
+    font-weight: 100;
+    text-align: center;
+    margin: 0.5rem 1rem;
+  }
 }
 
 /* For Tablet landscape-up */
-@media (min-width:900px) {
-  .sideNavbar {
-    display: inline-block;
-  }
-}
+@media (min-width:900px) {}
 
 /* For Desktop-up */
 @media (min-width:1200px) {}
