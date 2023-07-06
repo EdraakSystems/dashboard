@@ -77,12 +77,24 @@ h2 {
 }
 
 /* For phones Only */
-@media (max-width:599px) {
+@media (max-width:600px) {
   h2 {
     font-size: 0.75rem;
     font-weight: 200;
     text-align: center;
     margin: 0.5rem 1rem;
+  }
+
+  .sideNavbar {
+    display: none;
+  }
+}
+
+@media (max-width:450px) {
+  h2 {
+    font-size: 0.65rem;
+    font-weight: 100;
+    margin: 0.5rem 0.5rem;
   }
 
   .sideNavbar {

@@ -132,7 +132,7 @@ const Dashboard = () => {
         </div>
       </div>
       <div className="card_3">
-        <div className="cards_3_data cards_3_table ">
+        <div className="cards_3_table ">
           <div className="table_caption">
             <h2>Latest Sales Orders-By Sales Channels</h2>
             <h4>Enable</h4>
@@ -196,103 +196,101 @@ const Dashboard = () => {
             </table>
           </div>
         </div>
-        <div className="card3_container">
-          <div className="cards_3_data cards_3_purchase">
-            <h2>Purchase Orders</h2>
-            <div className="cards3_bill">
-              <h3>Received orders</h3>
-              <h3>$20</h3>
-              <h3>Total Cost (USD)</h3>
-              <h3>$4600</h3>
-            </div>
-            <hr className="horizontal_line" />
-
-            <div className="cards3_bill_detail">
-              <h3>Incoming Purchase orders</h3>
-              <div className="details">
-                <div className='details_logo_1'>
-                  <FaDotCircle />
-                  <h3>JP0005</h3>
-                  <h3>$1200</h3>
-                </div>
-                <h6>Shahab Yaseen</h6>
-              </div>
-              <div className="details">
-                <div className='details_logo_2'>
-                  <FaDotCircle />
-                  <h3>JP0005</h3>
-                  <h3>$1000</h3>
-                </div>
-                <h6>Shahab Yaseen</h6>
-              </div>
-              <div className="details">
-                <div className='details_logo_3'>
-                  <FaDotCircle />
-                  <h3>JP0005</h3>
-                  <h3>$200</h3>
-                </div>
-                <h6>Shahab Yaseen</h6>
-              </div>
-              <div className="details">
-                <div className='details_logo_4'>
-                  <FaDotCircle />
-                  <h3>JP0005</h3>
-                  <h3>$650</h3>
-                </div>
-                <h6>Shahab Yaseen</h6>
-              </div>
-              <div className="details">
-                <div className='details_logo_5'>
-                  <FaDotCircle />
-                  <h3>JP0005</h3>
-                  <h3>$10450</h3>
-                </div>
-                <h6>Shahab Yaseen</h6>
-              </div>
-            </div>
-            <h3>View all</h3>
+        <div className="cards_3_purchase">
+          <h2>Purchase Orders</h2>
+          <div className="cards3_bill">
+            <h3>Received orders</h3>
+            <h3>$20</h3>
+            <h3>Total Cost (USD)</h3>
+            <h3>$4600</h3>
           </div>
-          <div className="cards_3_data cards_3_top_selling">
-            <h2>Top Selling Products</h2>
-            <div className='card3_list'>
-              <ul className='card3_list_ul card3_tshirt'>
-                <li><img src={img1} alt="tshirt" /></li>
-                <li>T-Shirt for Men</li>
-                <li>$50</li>
-                <hr className="products_hr" />
-              </ul>
-              <ul className='card3_list_ul card3_tshirt'>
-                <li><img src={img1} alt="tshirt" /></li>
-                <li>T-Shirt for Men</li>
-                <li>$50</li>
-                <hr className="products_hr" />
+          <hr className="horizontal_line" />
 
-              </ul>
-
-              <ul className='card3_list_ul'>
-                <li><img src={img2} alt="frock" /></li>
-                <li>Lorem ipsum dolor sit amet consectetur</li>
-                <li>$250</li>
-                <hr className="products_hr" />
-
-              </ul>
-              <ul className='card3_list_ul'>
-                <li><img src={img2} alt="frock" /></li>
-                <li>Lorem, ipsum dolor sit amet consectetur</li>
-                <li>$250</li>
-                <hr className="products_hr" />
-              </ul>
-              <ul className='card3_list_ul'>
-                <li><img src={img3} alt="frock" /></li>
-                <li>Lorem ipsum dolor sit amet </li>
-                <li>$80</li>
-              </ul>
-              <ul className='card3_list_ul'>
-                <li><img src={img3} alt="frock" /></li>
-                <li>Lorem, ipsum dolor sit amet </li>
-                <li>$80</li>
-              </ul>
+          <div className="cards3_bill_detail">
+            <h3>Incoming Purchase orders</h3>
+            <div className="details">
+              <div className='details_logo_1'>
+                <FaDotCircle />
+                <h3>JP0005</h3>
+                <h3>$1200</h3>
+              </div>
+              <h6>Shahab Yaseen</h6>
             </div>
+            <div className="details">
+              <div className='details_logo_2'>
+                <FaDotCircle />
+                <h3>JP0005</h3>
+                <h3>$1000</h3>
+              </div>
+              <h6>Shahab Yaseen</h6>
+            </div>
+            <div className="details">
+              <div className='details_logo_3'>
+                <FaDotCircle />
+                <h3>JP0005</h3>
+                <h3>$200</h3>
+              </div>
+              <h6>Shahab Yaseen</h6>
+            </div>
+            <div className="details">
+              <div className='details_logo_4'>
+                <FaDotCircle />
+                <h3>JP0005</h3>
+                <h3>$650</h3>
+              </div>
+              <h6>Shahab Yaseen</h6>
+            </div>
+            <div className="details">
+              <div className='details_logo_5'>
+                <FaDotCircle />
+                <h3>JP0005</h3>
+                <h3>$10450</h3>
+              </div>
+              <h6>Shahab Yaseen</h6>
+            </div>
+          </div>
+          <h3>View all</h3>
+        </div>
+        <div className=" cards_3_top_selling">
+          <h2>Top Selling Products</h2>
+          <div className='card3_list'>
+            <ul className='card3_list_ul card3_tshirt'>
+              <li><img src={img1} alt="tshirt" /></li>
+              <li>T-Shirt for Men</li>
+              <li>$50</li>
+              <hr className="products_hr" />
+            </ul>
+            <ul className='card3_list_ul card3_tshirt'>
+              <li><img src={img1} alt="tshirt" /></li>
+              <li>T-Shirt for Men</li>
+              <li>$50</li>
+              <hr className="products_hr" />
+
+            </ul>
+
+            <ul className='card3_list_ul'>
+              <li><img src={img2} alt="frock" /></li>
+              <li>Lorem ipsum dolor sit amet consectetur</li>
+              <li>$250</li>
+              <hr className="products_hr" />
+
+            </ul>
+            <ul className='card3_list_ul'>
+              <li><img src={img2} alt="frock" /></li>
+              <li>Lorem, ipsum dolor sit amet consectetur</li>
+              <li>$250</li>
+              <hr className="products_hr" />
+            </ul>
+            <ul className='card3_list_ul'>
+              <li><img src={img3} alt="frock" /></li>
+              <li>Lorem ipsum dolor sit amet </li>
+              <li>$80</li>
+            </ul>
+            <ul className='card3_list_ul'>
+              <li><img src={img3} alt="frock" /></li>
+              <li>Lorem, ipsum dolor sit amet </li>
+              <li>$80</li>
+            </ul>
           </div>
         </div>
       </div>
