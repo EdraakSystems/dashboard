@@ -131,8 +131,8 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <div className="card_3 container">
-        <div className="cards_3_data cards_3_table container">
+      <div className="card_3">
+        <div className="cards_3_data cards_3_table ">
           <div className="table_caption">
             <h2>Latest Sales Orders-By Sales Channels</h2>
             <h4>Enable</h4>

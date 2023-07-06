@@ -181,6 +181,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-inline: auto;
 }
 
 .card3_container {
@@ -530,17 +531,16 @@ td {
 }
 
 
-/* For phones Only */
-@media (max-width:600px) {
+/* For Desktop Down */
+@media (max-width:1200px) {
     .dashboard_info {
-        font-size: 0.85rem;
-        flex-wrap: wrap;
+        font-size: 1.25rem;
     }
 
     .cards {
-        grid-template-columns: 1fr 1fr;
-        gap: 0.7rem;
-        max-width: 80%;
+        grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+        grid-gap: 1rem;
+        max-width: 90%;
     }
 
     .cards_data {
@@ -549,26 +549,26 @@ td {
     }
 
     .cards_data_info>h5 {
-        font-size: 0.6rem;
+        font-size: 0.75rem;
     }
 
     .cards_data_info>h3 {
-        font-size: 1.25rem;
-        font-weight: 100;
+        font-size: 1.5rem;
+        font-weight: 200;
     }
 
     .dashboard_info div {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
 
     .cards_data_logo {
         justify-content: space-around;
         gap: 1.5rem;
-        font-size: large;
+        font-size: x-large;
     }
 
     .logo_top {
-        font-size: large;
+        font-size: x-large;
     }
 
     .dashboard_info div :first-child {
@@ -576,91 +576,13 @@ td {
     }
 
     .cards_2 {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 0.5rem;
-        max-width: 80%;
-    }
-
-    .cards_2_data {
-        padding: 0.5rem 1rem;
-        gap: 1.5rem;
-    }
-
-    .cards_2_logo {
-        font-size: large;
-        width: 2rem;
-        height: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+        grid-gap: 1.5rem;
+        max-width: 90%;
     }
 
     .card_3 {
-        flex-direction: column;
-        gap: 0.5rem;
-        max-width: 80%;
-    }
-
-    .cards_2_data_info2>h3 {
-        font-size: 1.25rem;
-    }
-
-    .cards_3_table {
-        height: auto;
-    }
-
-    .table_data table {
-        border-spacing: 0.5rem;
-        font-size: 0.5rem;
-    }
-
-    .table_filter {
-        justify-content: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-    }
-
-    .table_search {
-        align-items: center;
-        gap: 1rem;
-        width: 35%;
-    }
-
-    .table_filter>ul {
-        gap: 1rem;
-        font-size: 0.75rem;
-        font-weight: 100;
-    }
-
-    .table_filter>ul :first-child {
-        padding: 0.2rem 0.65rem;
-    }
-
-    th {
-        padding: 0.25rem;
-    }
-
-    td {
-        padding: 0.25rem;
-    }
-
-    .card3_container {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .cards_3_purchase {
-        width: auto;
-        height: auto;
-        gap: 0.5rem;
-    }
-
-    .cards3_bill {
-        gap: 0.85rem;
-        margin: 0 1rem;
-        font-size: 0.55rem;
-        font-weight: 100;
-    }
-
-    .details_logo_2 :first-child {
-        font-size: 0.75rem;
+        margin-inline: 2rem;
     }
 }
 
@@ -804,15 +726,17 @@ td {
     }
 }
 
-/* For Desktop Down */
-@media (max-width:1200px) {
+/* For phones Only */
+@media (max-width:600px) {
     .dashboard_info {
-        font-size: 1.25rem;
+        font-size: 0.85rem;
+        flex-wrap: wrap;
     }
 
     .cards {
-        grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
-        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+        max-width: 80%;
     }
 
     .cards_data {
@@ -821,26 +745,26 @@ td {
     }
 
     .cards_data_info>h5 {
-        font-size: 0.75rem;
+        font-size: 0.6rem;
     }
 
     .cards_data_info>h3 {
-        font-size: 1.5rem;
-        font-weight: 200;
+        font-size: 1.25rem;
+        font-weight: 100;
     }
 
     .dashboard_info div {
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
 
     .cards_data_logo {
         justify-content: space-around;
         gap: 1.5rem;
-        font-size: x-large;
+        font-size: large;
     }
 
     .logo_top {
-        font-size: x-large;
+        font-size: large;
     }
 
     .dashboard_info div :first-child {
@@ -848,20 +772,107 @@ td {
     }
 
     .cards_2 {
-        grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
-        grid-gap: 1.5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.5rem;
+        max-width: 80%;
+    }
+
+    .cards_2_data {
+        padding: 0.5rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .cards_2_logo {
+        font-size: large;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .card_3 {
+        flex-direction: column;
+        gap: 0.5rem;
+        max-width: 80%;
+    }
+
+    .cards_2_data_info2>h3 {
+        font-size: 1.25rem;
+    }
+
+    .cards_3_table {
+        height: auto;
+    }
+
+    .table_data table {
+        border-spacing: 0.5rem;
+        font-size: 0.5rem;
+    }
+
+    .table_filter {
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .table_search {
+        align-items: center;
+        gap: 1rem;
+        width: 35%;
+    }
+
+    .table_filter>ul {
+        gap: 1rem;
+        font-size: 0.75rem;
+        font-weight: 100;
+    }
+
+    .table_filter>ul :first-child {
+        padding: 0.2rem 0.65rem;
+    }
+
+    th {
+        padding: 0.25rem;
+    }
+
+    td {
+        padding: 0.25rem;
+    }
+
+    .card3_container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cards_3_purchase {
+        width: auto;
+        height: auto;
+        gap: 0.5rem;
+    }
+
+    .cards3_bill {
+        gap: 0.85rem;
+        margin: 0 1rem;
+        font-size: 0.55rem;
+        font-weight: 100;
+    }
+
+    .details_logo_2 :first-child {
+        font-size: 0.75rem;
     }
 }
 
 /* For Big-Desktop */
-/* @media (max-width:1200px) {
-    .cards {
-        grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
-        grid-gap: 1.5rem;
+@media (min-width:1200px) {
+
+    .cards,
+    .cards_2 {
+        width: 95%;
     }
 
-    .cards_2 {
-        grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
-        grid-gap: 1.5rem;
+    .container {
+        margin-inline: 2rem;
     }
-} */
+
+    .card_3 {
+        margin-inline: auto;
+    }
+}

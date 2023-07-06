@@ -109,14 +109,7 @@ h2 {
   .sideNavbar {
     display: flex;
   }
-
-  .container {
-    margin-inline: 2rem;
-  }
 }
 
 /* For Desktop-up */
 @media (min-width:1200px) {}
-
-/* For Big-Desktop-up */
-@media (min-width:1800px) {}
