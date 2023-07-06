@@ -28,7 +28,7 @@
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
     gap: 1rem;
 }
 
@@ -94,7 +94,7 @@
 
 .cards_2 {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
     gap: 1rem;
 }
 
@@ -181,7 +181,6 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    flex-wrap: wrap;
 }
 
 .card3_container {
@@ -532,7 +531,7 @@ td {
 
 
 /* For phones Only */
-@media (max-width:599px) {
+@media (max-width:600px) {
     .dashboard_info {
         font-size: 0.85rem;
         flex-wrap: wrap;
@@ -663,12 +662,10 @@ td {
     .details_logo_2 :first-child {
         font-size: 0.75rem;
     }
-
-
 }
 
-/* For Tablet Portrait-up */
-@media (min-width:600px) {
+/* For Tablet Portrait-down */
+@media (max-width:900px) {
     .dashboard_info {
         font-size: 1rem;
         flex-wrap: wrap;
@@ -730,6 +727,7 @@ td {
     }
 
     .card_3 {
+        flex-direction: column;
         gap: 0.5rem;
         max-width: 80%;
     }
@@ -806,11 +804,64 @@ td {
     }
 }
 
-/* For Tablet landscape-up */
-@media (min-width:900px) {}
+/* For Desktop Down */
+@media (max-width:1200px) {
+    .dashboard_info {
+        font-size: 1.25rem;
+    }
 
-/* For Desktop-up */
-@media (min-width:1200px) {}
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+        grid-gap: 1rem;
+    }
 
-/* For Big-Desktop-up */
-@media (min-width:1800px) {}
+    .cards_data {
+        padding: 0.5rem 0.75rem;
+        gap: 2.5rem;
+    }
+
+    .cards_data_info>h5 {
+        font-size: 0.75rem;
+    }
+
+    .cards_data_info>h3 {
+        font-size: 1.5rem;
+        font-weight: 200;
+    }
+
+    .dashboard_info div {
+        font-size: 1rem;
+    }
+
+    .cards_data_logo {
+        justify-content: space-around;
+        gap: 1.5rem;
+        font-size: x-large;
+    }
+
+    .logo_top {
+        font-size: x-large;
+    }
+
+    .dashboard_info div :first-child {
+        padding: 0.25rem 0.35rem;
+    }
+
+    .cards_2 {
+        grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+        grid-gap: 1.5rem;
+    }
+}
+
+/* For Big-Desktop */
+/* @media (max-width:1200px) {
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+        grid-gap: 1.5rem;
+    }
+
+    .cards_2 {
+        grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+        grid-gap: 1.5rem;
+    }
+} */

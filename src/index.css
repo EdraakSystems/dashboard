@@ -59,15 +59,14 @@ a {
 
 .content {
   display: flex;
-  flex: 1 1 auto;
 }
 
 .sideNavbar {
-  flex: 0 0 auto;
+  flex: 1;
 }
 
 .dashBoard {
-  flex: 1;
+  flex: 9;
 }
 
 h2 {
@@ -106,7 +105,15 @@ h2 {
 }
 
 /* For Tablet landscape-up */
-@media (min-width:900px) {}
+@media (min-width:900px) {
+  .sideNavbar {
+    display: flex;
+  }
+
+  .container {
+    margin-inline: 2rem;
+  }
+}
 
 /* For Desktop-up */
 @media (min-width:1200px) {}

@@ -7,7 +7,7 @@ import Dashboard from './components/Dashboard/Dashboard'
 
 const App = () => {
   return (
-    <div className='dash_container container'>
+    <div className='dash_container'>
       <div className="topNavbar"> <Navbar /></div>
       <div className="content">
         <div className="sideNavbar"> <Leftnav /></div>

@@ -4,7 +4,6 @@
     align-items: center;
     background: var(--white);
     width: 100%;
-    flex-wrap: wrap;
 }
 
 .nav_logo {
@@ -156,13 +155,32 @@
     .nav_user {
         display: none;
     }
+
 }
 
 /* For Tablet landscape-up */
-@media (min-width:900px) {}
+@media (min-width:900px) {
+    .menu {
+        display: none;
+    }
+
+    .nav_product,
+    .nav_search,
+    .nav_user {
+        display: flex;
+    }
+
+    .nav_task {
+        display: none;
+    }
+}
 
 /* For Desktop-up */
-@media (min-width:1200px) {}
+@media (min-width:1200px) {
+    .nav_task {
+        display: flex;
+    }
+}
 
 /* For Big-Desktop-up */
 @media (min-width:1800px) {}
